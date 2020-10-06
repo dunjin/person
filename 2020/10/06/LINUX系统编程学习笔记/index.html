@@ -20,17 +20,29 @@
     var CONFIG = {"hostname":"example.com","root":"/person/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://example.com/categories/index.html">
+  <meta name="description" content="LINUX系统编程学习笔记Linux系统基础知识什么是操作系统？两个核心作用：提升资源利用率和方便用户的使用  为什么要学习Linux内核？  Linux系统的整体结构  Linux内核的设计理念是什么？  就是机制与策略分离；机制是指提供什么样的功能；策略是指如何使用这些功能。   Linux红宝书  Linux单内核与微内核的差异是什么？单内核维护困难（内核中有一个模块改变就需要重新编译，需要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LINUX系统编程学习笔记">
+<meta property="og:url" content="http://example.com/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="顿劲的个人博客">
+<meta property="og:description" content="LINUX系统编程学习笔记Linux系统基础知识什么是操作系统？两个核心作用：提升资源利用率和方便用户的使用  为什么要学习Linux内核？  Linux系统的整体结构  Linux内核的设计理念是什么？  就是机制与策略分离；机制是指提供什么样的功能；策略是指如何使用这些功能。   Linux红宝书  Linux单内核与微内核的差异是什么？单内核维护困难（内核中有一个模块改变就需要重新编译，需要">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-06T09:13:51.000Z">
-<meta property="article:modified_time" content="2020-10-06T09:16:01.857Z">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006084931236.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006085126270.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006085255619.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006085620788.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006085938687.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006092218793.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006092624946.png">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006092852290.png">
+<meta property="article:published_time" content="2020-10-06T10:01:35.000Z">
+<meta property="article:modified_time" content="2020-10-06T10:02:38.921Z">
 <meta property="article:author" content="dunjin">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20201006084931236.png">
 
-<link rel="canonical" href="http://example.com/categories/">
+<link rel="canonical" href="http://example.com/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -38,13 +50,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>categories | 顿劲的个人博客
-</title>
+  <title>LINUX系统编程学习笔记 | 顿劲的个人博客</title>
   
 
 
@@ -156,51 +167,97 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="en">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/person/images/avatar.gif">
+      <meta itemprop="name" content="dunjin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="顿劲的个人博客">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LINUX系统编程学习笔记
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2020-10-06 18:01:35 / Modified: 18:02:38" itemprop="dateCreated datePublished" datetime="2020-10-06T18:01:35+08:00">2020-10-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="LINUX系统编程学习笔记"><a href="#LINUX系统编程学习笔记" class="headerlink" title="LINUX系统编程学习笔记"></a>LINUX系统编程学习笔记</h1><h2 id="Linux系统基础知识"><a href="#Linux系统基础知识" class="headerlink" title="Linux系统基础知识"></a>Linux系统基础知识</h2><p><strong>什么是操作系统</strong>？两个核心作用：提升资源利用率和方便用户的使用</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006084931236.png" alt="image-20201006084931236"></p>
+<p>为什么要学习Linux内核？</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085126270.png" alt="image-20201006085126270"></p>
+<p>Linux系统的整体结构</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085255619.png" alt="image-20201006085255619"></p>
+<p>Linux内核的设计理念是什么？  就是机制与策略分离；机制是指提供什么样的功能；策略是指如何使用这些功能。</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085620788.png" alt="image-20201006085620788"></p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085938687.png" alt="image-20201006085938687"></p>
+<p>Linux红宝书</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092218793.png" alt="image-20201006092218793"></p>
+<p>Linux单内核与微内核的差异是什么？单内核维护困难（内核中有一个模块改变就需要重新编译，需要更新内核），性能高，要增加新的功能需要；微内核维护简单，效率相对低一些，只是基本的进程间通信，内存和调试之外都是通过服务器的方式放在外部，见下图中的内核模式的差异。</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092624946.png" alt="image-20201006092624946"></p>
+<p>前面提了单内核的维护比较困难，为了改变Linux的维护困难，又提供了一个可加装的linux内核模块，即LKM，可以在运行时进行加装或者删除。内核模块不是不是独立的可执行文件，但在运行时其目标文件会被链接到内核中，只有root用户才能加载和卸载内核模块。</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092852290.png" alt="image-20201006092852290"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/person/tags/linux/" rel="tag"># linux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/person/2020/10/04/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              No categories
-            </div>
-            <div class="category-all">
-              
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -251,6 +308,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">LINUX系统编程学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.1.</span> <span class="nav-text">Linux系统基础知识</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
