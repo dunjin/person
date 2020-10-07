@@ -571,6 +571,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/person/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/person/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/person/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '032b951f646c97964ad4',
+        clientSecret: '418fc5e577cb66d4b91b4d02a29a46ce73e35718',
+        repo: 'dunjin's blog',
+        owner: 'dunjin',
+        admin: "dunjin",
+        id: '2020-10-04T11-43-42',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
