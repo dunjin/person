@@ -4,25 +4,23 @@
   
     
     <entry>
-      <title>linux system basic knowledge</title>
-      <link href="/person/2020/10/07/linux-system-basic-knowledge/"/>
-      <url>/person/2020/10/07/linux-system-basic-knowledge/</url>
+      <title>why I wirte blog?</title>
+      <link href="/person/2020/10/07/why-I-wirte-blog/"/>
+      <url>/person/2020/10/07/why-I-wirte-blog/</url>
       
-        <content type="html"><![CDATA[<hr><h1 id="Linux系统基础知识"><a href="#Linux系统基础知识" class="headerlink" title="Linux系统基础知识"></a>Linux系统基础知识</h1><h2 id="什么是操作系统？"><a href="#什么是操作系统？" class="headerlink" title="什么是操作系统？"></a><strong>什么是操作系统</strong>？</h2><p>操作系统的两个核心作用：提升资源利用率和方便用户的使用</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006084931236.png" alt="image-20201006084931236"></p><h2 id="为什么要学习Linux内核？"><a href="#为什么要学习Linux内核？" class="headerlink" title="为什么要学习Linux内核？"></a>为什么要学习Linux内核？</h2><p>主要是因为linux操作系统目前应用广泛，性能高，开源；一般大型服务器和分布式系统都是采用的linux系统，而且是属于所有应用软件的底层系统，理解linux内核的原理有利于理解上层应用和优化上层应用，实现与别人不一样的个性化的能力。</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006085126270.png" alt="image-20201006085126270"></p><p>Linux系统的整体结构如下图</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006085255619.png" alt="image-20201006085255619"></p><h2 id="Linux内核的设计理念是什么？"><a href="#Linux内核的设计理念是什么？" class="headerlink" title="Linux内核的设计理念是什么？"></a>Linux内核的设计理念是什么？</h2><p>就是机制与策略分离；机制是指提供什么样的功能；策略是指如何使用这些功能。</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006085620788.png" alt="image-20201006085620788"></p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006085938687.png" alt="image-20201006085938687"></p><p>Linux红宝书</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006092218793.png" alt="image-20201006092218793"></p><p>Linux单内核与微内核的差异是什么？单内核维护困难（内核中有一个模块改变就需要重新编译，需要更新内核），性能高，要增加新的功能需要；微内核维护简单，效率相对低一些，只是基本的进程间通信，内存和调试之外都是通过服务器的方式放在外部，见下图中的内核模式的差异。</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006092624946.png" alt="image-20201006092624946"></p><p>前面提了单内核的维护比较困难，为了改变Linux的维护困难，又提供了一个可加装的linux内核模块，即LKM，可以在运行时进行加装或者删除。内核模块不是不是独立的可执行文件，但在运行时其目标文件会被链接到内核中，只有root用户才能加载和卸载内核模块。</p><p><img src="https://github.com/dunjin/person/blob/master/2020/10/07/linux-system-basic-knowledge/image-20201006092852290.png" alt="image-20201006092852290"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="我为什么要写博客？"><a href="#我为什么要写博客？" class="headerlink" title="我为什么要写博客？"></a>我为什么要写博客？</h1><p>说到为什么要写博客，我个人的原因主要有三点，</p><p>第一，整理自己的知识体系，把学到的东西有条理地整理一遍，再通过文字把一些关键的理论归纳出来，个人认为会对知识的认知有大帮助作用，也许是现在年龄大了，经常学了一些东西很快就忘记了，如果重新看原来的一些初始文章或者书，会比较费时间，但如果能回头看一遍自己梳理过的知识点，便能迅速地融会贯通。</p><p>第二，分享学习过程与经验，我经常想为什么有一些书或者文章把一个事情写的非常复杂，但实际上用很简短的几句话就能说明白的道理，我发现这里其实是“理论”与“实践”的差别，有些人看书或者文章只是想理解其中的逻辑，而有些人是想实践动手操作，这两种诉求其实对文章的要求是完全不同的，因此我的所有技术性的博客，如果我有实践过会分为理论与动手实践两个部分，否则就只有理论部分。</p><p>第三，个人感悟的记录，我经常有一些很新奇想法，但有时一瞬间就忘记了，记录可以是记录一段时光，一段生活经历，不管怎么说，人在不同的时间段再回头看自己的从前，都会有不一样的感触，而记录，则赋予了我们这个能力，在一段时间能回过头了解当时的事情，岁月和心境，感慨万千。</p><p>最后，希望我能把博客长期的坚持下去，明白了学习是终身的，有些东西快不得，得慢下来，记录正好可以使我慢下来沉淀沉淀。</p>]]></content>
       
       
       <categories>
           
-          <category> linux </category>
+          <category> 感悟 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> linux </tag>
-            
-            <tag> code </tag>
+            <tag> 写作 </tag>
             
         </tags>
       
