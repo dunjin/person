@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>顿劲的个人博客</title>
+  
+  <subtitle>技术博客与感悟记录</subtitle>
+  <link href="https://dunjin.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dunjin.github.io/"/>
+  <updated>2020-10-07T03:41:16.186Z</updated>
+  <id>https://dunjin.github.io/</id>
+  
+  <author>
+    <name>dunjin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linuux system basic knowledge</title>
+    <link href="https://dunjin.github.io/2020/10/07/linuux-system-basic-knowledge/"/>
+    <id>https://dunjin.github.io/2020/10/07/linuux-system-basic-knowledge/</id>
+    <published>2020-10-07T03:41:16.000Z</published>
+    <updated>2020-10-07T03:41:16.186Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
