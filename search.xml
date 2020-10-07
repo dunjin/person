@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>contact</title>
+      <link href="/person/2020/10/07/contact/"/>
+      <url>/person/2020/10/07/contact/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LINUX系统编程学习笔记</title>
+      <link href="/person/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/person/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="LINUX系统编程学习笔记"><a href="#LINUX系统编程学习笔记" class="headerlink" title="LINUX系统编程学习笔记"></a>LINUX系统编程学习笔记</h1><h2 id="Linux系统基础知识"><a href="#Linux系统基础知识" class="headerlink" title="Linux系统基础知识"></a>Linux系统基础知识</h2><p><strong>什么是操作系统</strong>？两个核心作用：提升资源利用率和方便用户的使用</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006084931236.png" alt="image-20201006084931236"></p><p>为什么要学习Linux内核？</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085126270.png" alt="image-20201006085126270"></p><p>Linux系统的整体结构</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085255619.png" alt="image-20201006085255619"></p><p>Linux内核的设计理念是什么？  就是机制与策略分离；机制是指提供什么样的功能；策略是指如何使用这些功能。</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085620788.png" alt="image-20201006085620788"></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006085938687.png" alt="image-20201006085938687"></p><p>Linux红宝书</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092218793.png" alt="image-20201006092218793"></p><p>Linux单内核与微内核的差异是什么？单内核维护困难（内核中有一个模块改变就需要重新编译，需要更新内核），性能高，要增加新的功能需要；微内核维护简单，效率相对低一些，只是基本的进程间通信，内存和调试之外都是通过服务器的方式放在外部，见下图中的内核模式的差异。</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092624946.png" alt="image-20201006092624946"></p><p>前面提了单内核的维护比较困难，为了改变Linux的维护困难，又提供了一个可加装的linux内核模块，即LKM，可以在运行时进行加装或者删除。内核模块不是不是独立的可执行文件，但在运行时其目标文件会被链接到内核中，只有root用户才能加载和卸载内核模块。</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201006092852290.png" alt="image-20201006092852290"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/person/2020/10/04/hello-world/"/>
+      <url>/person/2020/10/04/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>顿劲的个人博客</title>
+  
+  
+  <link href="https://dunjin.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dunjin.github.io/"/>
+  <updated>2020-10-07T01:04:05.668Z</updated>
+  <id>https://dunjin.github.io/</id>
+  
+  <author>
+    <name>dunjin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>contact</title>
+    <link href="https://dunjin.github.io/2020/10/07/contact/"/>
+    <id>https://dunjin.github.io/2020/10/07/contact/</id>
+    <published>2020-10-07T01:04:05.000Z</published>
+    <updated>2020-10-07T01:04:05.668Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>LINUX系统编程学习笔记</title>
+    <link href="https://dunjin.github.io/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dunjin.github.io/2020/10/06/LINUX%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-10-06T10:01:35.000Z</published>
+    <updated>2020-10-06T10:02:38.921Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LINUX系统编程学习笔记&quot;&gt;&lt;a href=&quot;#LINUX系统编程学习笔记&quot; class=&quot;headerlink&quot; title=&quot;LINUX系统编程学习笔记&quot;&gt;&lt;/a&gt;LINUX系统编程学习笔记&lt;/h1&gt;&lt;h2 id=&quot;Linux系统基础知识&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://dunjin.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://dunjin.github.io/2020/10/04/hello-world/"/>
+    <id>https://dunjin.github.io/2020/10/04/hello-world/</id>
+    <published>2020-10-04T03:43:42.482Z</published>
+    <updated>2020-10-04T03:43:42.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
