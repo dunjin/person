@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>顿劲的个人博客</title>
   
-  <subtitle>努力做有价值的技术博客与感悟</subtitle>
+  <subtitle>技术博客与感悟记录</subtitle>
   <link href="https://dunjin.github.io/atom.xml" rel="self"/>
   
   <link href="https://dunjin.github.io/"/>
